@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Flask Template Example</title>
+    <style>
+      .container {
+        max-width: 500px;
+        padding-top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p>Your choice: {{my_string}}</p>
+      <p>Numbers available: {{allnumbers[]}}</p>
+      <p>THE LIST OF NUMBERS ARE:</p>
+      <ul>
+        {% for n in allnumbers:
+           allnumbers.append(i.phone_number)
+         %}
+
+        <li>{{n}}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </body>
+  </html>

@@ -1,0 +1,49 @@
+<html lang = "en">
+  <head>
+    <title>Message</title>
+    <meta charset = "UTF-8" />
+  </head>
+     
+
+     <body>
+      <h1>YOUR MESSAGE HAS BEEN SENT SUCCESSFULLY........... NOW REGISTER HERE</h1>
+       <form action="{{url_for('register')}}" method="POST">
+          <fieldset>
+            <legend>Register here</legend>  
+             
+         <p>
+           <label>Your name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+            <input type="text" id="name1" name="name1">
+          </p>
+          <p>
+            
+            <label>Ph-no:</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;
+            <input type="text" id="phno" name="phno">
+          </p>
+           <p>
+            
+            <label>Acc_SID:</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;<input type="text" id="accsid" name="accsid">
+          </p>
+           <p>
+            
+            <label>Auth_Token:</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="atoken" name="atoken">
+          </p>
+         
+
+          <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          
+          <input type="submit" value="Register"/>
+        </p>
+        </fieldset>
+        
+        </form>
+        
+  </body>
+  </html>

@@ -1,0 +1,106 @@
+<html lang = "en">
+  <head>
+    <title>Message</title>
+    <meta charset = "UTF-8" />
+
+    <STYLE>
+    .a1{margin-left: 10%;
+     margin-right: 10%}
+    </STYLE>
+  </head>
+  <body>
+    <div class="a1">
+    <fieldset>
+      <legend> <B><I>Fill in Your details</I></B></legend>
+    <table style="width:100%; background-color:#CCCCCC;" border="0">
+    <tr>
+    <th STYLE="background-color:#CCCCCC">Send Message</th>
+    <th STYLE="background-color:#CCCCCC">Register Yourself</th>
+    </tr>
+    <tr>
+      <form  action=" {{url_for('sndmsg')}}" method="POST">
+    <td style="width:40% ; background-color:#f1f1c1;">
+     
+        
+        
+        
+        <p>
+             &nbsp;&nbsp;&nbsp;&nbsp;<label>Sender's number</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <select id = "slist" name="slist">
+               <option value = "+12013895506">+12013895506</option>
+               <option value = "+41798072491">+41798072491</option>
+               <option value = "+12013895506">+12013895506</option>
+               <option value = "+41798072491">+41798072491</option>
+             </select>
+          </p>
+          <p>
+             &nbsp;&nbsp;&nbsp;&nbsp;<label>Receiver's  number</label>&nbsp;&nbsp;&nbsp;&nbsp;
+             <select id = "rlist" name="rlist">
+               <option value = "+918093660692">+91-8093660692</option>
+               <option value = "+919951439132">+91-9951439132</option>
+               <option value = "+918093660692">91-8093660692</option>
+               <option value = "+918093660692">91-8093660692</option>
+             </select>
+          </p>
+          <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;<label>Your Message</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <textarea name="msg" id="msg"></textarea></p>
+            <p></p>
+          <p align"center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="submit" value="Send"></p>
+        
+      </td>
+      </form>
+
+
+
+    </br>
+        <form  action=" {{url_for('register')}}" method="POST">
+       <td style="width:40% ; background-color:#f1f1c1">         
+         <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label>Your Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" id="name1" name="name1">
+          </p>
+          <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label>Ph-no:</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;
+            <input type="text" id="phno" name="phno">
+          </p>
+           <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label>Acc_SID:</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;<input type="text" id="accsid" name="accsid">
+          </p>
+           <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label>Auth_Token:</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="atoken" name="atoken">
+          </p>
+         
+
+          <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="submit" value="Register"></p>
+ 
+        </td>
+        </form>
+    
+      </tr>
+    
+  </table>
+  </fieldset>
+  </div>
+  </body>
+  </html>
