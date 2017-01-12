@@ -49,29 +49,37 @@ def sndmsg():
 	if (len(numbers)>0):
 		allnumbers=[]
 		for i in numbers:
-			allnumbers.append(i.phone_number)
-			print i.phone_number
-
-			pick=raw_input("pick your number:")
-			allnumbers.index(pick)
-			#Purchase the first number in the list
-			for pick in allnumbers:
-				print "congratulations You've picked ",str(pick)
-				print "you've purchased ",str(allnumbers.index(pick))
-				#numbers[0].purchase()
-
+		 	allnumbers.append(i.phone_number)
+		 	# c=i.phone_number
+		 	# print type(c)
+		 	# print c
+		 	# print ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+		 	# if c in 
+		
+		return render_template('response.html',allnumbers=allnumbers)
+		 	
 	else:
 		print "sorry no numbers available"
+    
+			# pick=raw_input("pick your number:")
+			# allnumbers.index(pick)
+			# #Purchase the first number in the list
+			# for pick in allnumbers:
+			# 	print "congratulations You've picked ",str(pick)
+			# 	print "you've purchased ",str(allnumbers.index(pick))
+				#numbers[0].purchase()
+
+	
 
 	#
-	query="""INSERT into twilioNumbers(Name,phone_number,twilio_number,datecreation)values(%s,%s,%s,%s)"""
-	cur.execute(query,(name,phno,pick,datecreation))
-	print "Record successfully added"
-	db.commit()
-	cur.close()
-	db.close()
-	return jsonify({'numbers':allnumbers}, )
-	
+ #    query="""INSERT into twilioNumbers(Name,phone_number,twilio_number,datecreation)values(%s,%s,%s,%s)"""
+	# cur.execute(query,(name,phno,pick,datecreation))
+	# print "Record successfully added"
+	# db.commit()
+	# cur.close()
+	# db.close()
+	# # return jsonify({'numbers':allnumbers}, )
+	# return jsonify(allnumbers)
 
 
 

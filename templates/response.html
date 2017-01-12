@@ -1,26 +1,47 @@
 <html>
-  <head>
-    <title>Flask Template Example</title>
-    <style>
-      .container {
-        max-width: 500px;
-        padding-top: 100px;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <p>Your choice: {{my_string}}</p>
-      <p>Numbers available: {{allnumbers[]}}</p>
-      <p>THE LIST OF NUMBERS ARE:</p>
-      <ul>
-        {% for n in allnumbers:
-           allnumbers.append(i.phone_number)
-         %}
+<head></head>
+<style>
+   body {background-color: powderblue;}
 
-        <li>{{n}}</li>
-        {% endfor %}
-      </ul>
-    </div>
-  </body>
-  </html>
+
+   .button {
+            padding: 10px 20px;
+            font-size: 15px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+          }
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+ </style>
+<body>
+	<h1>List of numbers available are:</h1>
+
+
+  {% for nos in allnumbers %}
+        
+         <ul>
+         <li>{{ nos }}</li>
+     </ul>
+   {% endfor %}
+ <form >
+ <p><label>ENTER YOUR CHOICE:</label><input type="text" name="choice" id="choice"></p>
+ <center><p><button class="button">Purchase</button></p></center>
+</form>
+ 
+ 
+</body>
+</html>
