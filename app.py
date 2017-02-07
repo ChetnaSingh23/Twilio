@@ -25,7 +25,7 @@ def main():
   return render_template('index.html')
 
 
-@app.route('/sndmsg', methods=['POST'])
+@app.route('/sndmsg', methods=['POST','PUT'])
 def sndmsg():
 	ACCOUNT_SID = "AC7f31123e044d86fcbaf0934dc66c6788" 
 	AUTH_TOKEN = "c732383c7be727ce64b2d3bff60e8724"

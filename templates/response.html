@@ -32,13 +32,12 @@
 
 
   {% for nos in allnumbers %}
-        
-         <ul>
+        <input type="radio" name="nos" value="{{ nos }}" checked> {{ nos }}<br>
+         <!-- <ul>
          <li>{{ nos }}</li>
-     </ul>
+     </ul> -->
    {% endfor %}
  <form >
- <p><label>ENTER YOUR CHOICE:</label><input type="text" name="choice" id="choice"></p>
  <center><p><button class="button">Purchase</button></p></center>
 </form>
  
